@@ -2,12 +2,12 @@
 
 public class Q1WeirdFunction {
 
-    public static int fRecurisve(int n) {
+   public static int fRecursive(int n) {
       if(n < 3) return n;
-      return fRecurisve(n - 1) + fRecurisve(n - 2) + fRecurisve(n - 3);
+      return fRecursive(n - 1) + fRecursive(n - 2) + fRecursive(n - 3);
    }
    
-   public static int fInterative(int n) {
+   public static int fIterative(int n) {
       while(n < 3)
          n = (n - 1) + (n - 2) + (n - 3);
       return n;
